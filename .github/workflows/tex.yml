@@ -25,3 +25,9 @@ jobs:
       with:
         # The root LaTeX file to be compiled
         root_file: cv.tex
+
+    - name: Upload compiled cv
+      uses: actions/upload-artifact@v2
+      with:
+        name: curriculum
+        path: cv.pdf
